@@ -1,0 +1,45 @@
+{
+	"ImportPath": "github.com/nikhilbhide/JWTDemo",
+	"GoVersion": "go1.10",
+	"GodepVersion": "v80",
+	"Deps": [
+		{
+			"ImportPath": "github.com/auth0/go-jwt-middleware",
+			"Rev": "36081240882bbf356af6efb152969e4b0bcf4456"
+		},
+		{
+			"ImportPath": "github.com/dgrijalva/jwt-go",
+			"Comment": "v3.2.0-10-g5e25c22",
+			"Rev": "5e25c22bd5d6de03265bbe5462dcd162f85046f6"
+		},
+		{
+			"ImportPath": "github.com/gorilla/mux",
+			"Comment": "v1.7.2",
+			"Rev": "ed099d42384823742bba0bf9a72b53b55c9e2e38"
+		},
+		{
+			"ImportPath": "github.com/lib/pq",
+			"Comment": "v1.2.0-23-g9927457",
+			"Rev": "99274577be97ac9b1d95a2d61d566dc9b7cc6a54"
+		},
+		{
+			"ImportPath": "github.com/lib/pq/oid",
+			"Comment": "v1.2.0-23-g9927457",
+			"Rev": "99274577be97ac9b1d95a2d61d566dc9b7cc6a54"
+		},
+		{
+			"ImportPath": "github.com/lib/pq/scram",
+			"Comment": "v1.2.0-23-g9927457",
+			"Rev": "99274577be97ac9b1d95a2d61d566dc9b7cc6a54"
+		},
+		{
+			"ImportPath": "github.com/nik/go-mysql-crud/models",
+			"Rev": "0d81d1289c4343d51d9d58beacb43b3f1cc83d05"
+		},
+		{
+			"ImportPath": "github.com/urfave/negroni",
+			"Comment": "v1.0.0-35-gf431679",
+			"Rev": "f4316798d5d3acd39eb6784301b19f27f471415f"
+		}
+	]
+}
