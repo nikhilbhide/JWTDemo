@@ -2,8 +2,8 @@ package bo
 
 import (
 	"context"
-	"github.com/nik/JWTDemo/model"
-	repsitory "github.com/nik/JWTDemo/repository"
+	"github.com/nikhilbhide/JWTDemo/model"
+	repsitory "github.com/nikhilbhide/JWTDemo/repository"
 )
 
 type loginUseCase struct {

@@ -3,7 +3,7 @@ package token
 import (
 	"github.com/auth0/go-jwt-middleware"
 	"github.com/dgrijalva/jwt-go"
-	"github.com/nik/JWTDemo/model"
+	"github.com/nikhilbhide/JWTDemo/model"
 )
 
 //secretKey var

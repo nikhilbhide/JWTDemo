@@ -1,6 +1,6 @@
 package docs
 
-import "github.com/nik/JWTDemo/model"
+import "github.com/nikhilbhide/JWTDemo/model"
 
 // swagger:route POST /login login-tag idOfLoginEndpoint
 // Verifies user login credentials

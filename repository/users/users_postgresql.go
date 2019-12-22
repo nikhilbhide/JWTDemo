@@ -3,9 +3,9 @@ package users
 import (
 	"context"
 	"database/sql"
-	"github.com/nik/JWTDemo/model"
-	repsitory "github.com/nik/JWTDemo/repository"
-	"github.com/nik/go-mysql-crud/models"
+	"errors"
+	"github.com/nikhilbhide/JWTDemo/model"
+	"github.com/nikhilbhide/JWTDemo/repository"
 )
 
 //NewSQLUsersRepo implement login repository interface
@@ -61,7 +61,8 @@ func (m *loginPostGresRepo) GetByUserID(ctx context.Context, id int64) (*model.L
 	if len(rows) > 0 {
 		payload = rows[0]
 	} else {
-		return nil, models.ErrNotFound
+		err:=errors.New("UserId not found")
+		return nil,err
 	}
 
 	return payload, nil

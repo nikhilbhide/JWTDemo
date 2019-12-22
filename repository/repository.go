@@ -2,7 +2,7 @@ package repsitory
 
 import (
 	"context"
-	"github.com/nik/JWTDemo/model"
+	"github.com/nikhilbhide/JWTDemo/model"
 )
 
 // SignupRepo

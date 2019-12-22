@@ -3,13 +3,13 @@ package main
 
 import (
 	"github.com/gorilla/mux"
-	"github.com/nik/JWTDemo/bo"
-	"github.com/nik/JWTDemo/driver/postgres"
-	"github.com/nik/JWTDemo/repository/users"
-	"github.com/nik/JWTDemo/services/registry"
+	"github.com/nikhilbhide/JWTDemo/bo"
+	"github.com/nikhilbhide/JWTDemo/driver/postgres"
+	"github.com/nikhilbhide/JWTDemo/repository/users"
+	"github.com/nikhilbhide/JWTDemo/services/registry"
 	"log"
 	"net/http"
-	_ "github.com/nik/JWTDemo/docs"
+	_ "github.com/nikhilbhide/JWTDemo/docs"
 )
 
 func main() {

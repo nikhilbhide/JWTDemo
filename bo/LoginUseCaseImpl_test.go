@@ -2,13 +2,13 @@ package bo
 
 import (
 	"context"
-	"github.com/nik/JWTDemo/driver/postgres"
-	"github.com/nik/JWTDemo/repository/users"
+	"github.com/nikhilbhide/JWTDemo/driver/postgres"
+	"github.com/nikhilbhide/JWTDemo/repository/users"
 	"reflect"
 	"testing"
 
-	"github.com/nik/JWTDemo/model"
-	repsitory "github.com/nik/JWTDemo/repository"
+	"github.com/nikhilbhide/JWTDemo/model"
+	repsitory "github.com/nikhilbhide/JWTDemo/repository"
 )
 
 func TestNewLoginUseCase(t *testing.T) {

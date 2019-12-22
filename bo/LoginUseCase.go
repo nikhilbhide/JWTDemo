@@ -2,7 +2,7 @@ package bo
 
 import (
 	"context"
-	"github.com/nik/JWTDemo/model"
+	"github.com/nikhilbhide/JWTDemo/model"
 )
 
 // Usecase represent the article's usecases
