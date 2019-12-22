@@ -1,5 +1,5 @@
 # Builder
-FROM golang:1.13.5-alpine3.10 as builder
+FROM golang:1.12.1-alpine as builder
 
 RUN apk update && apk upgrade && \
     apk --update add git make
@@ -16,13 +16,13 @@ run mkdir -p nikhilbhide
 WORKDIR $GOPATH/src/github.com/nikhilbhide
 run git clone https://github.com/nikhilbhide/JWTDemo
 WORKDIR $GOPATH/src/github.com/nikhilbhide/JWTDemo
-run go get github.com/tools/godep
 
 #COPY . ./
 #RUN CGO_ENABLED=0 GOOS=linux godep go build -a -installsuffix nocgo -o /app .
 
 #FROM scratch
 #COPY --from=builder /app ./
-run godep save
-run godep go build
+#run godep save
+run go build
+
 ENTRYPOINT ["./JWTDemo"]

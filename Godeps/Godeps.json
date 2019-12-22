@@ -1,6 +1,6 @@
 {
 	"ImportPath": "github.com/nikhilbhide/JWTDemo",
-	"GoVersion": "go1.10",
+	"GoVersion": "go1.12",
 	"GodepVersion": "v80",
 	"Deps": [
 		{
@@ -31,10 +31,6 @@
 			"ImportPath": "github.com/lib/pq/scram",
 			"Comment": "v1.2.0-23-g9927457",
 			"Rev": "99274577be97ac9b1d95a2d61d566dc9b7cc6a54"
-		},
-		{
-			"ImportPath": "github.com/nik/go-mysql-crud/models",
-			"Rev": "0d81d1289c4343d51d9d58beacb43b3f1cc83d05"
 		},
 		{
 			"ImportPath": "github.com/urfave/negroni",

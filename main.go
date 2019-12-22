@@ -2,14 +2,16 @@ package main
 //go:generate swagger generate spec
 
 import (
+	"fmt"
 	"github.com/gorilla/mux"
 	"github.com/nikhilbhide/JWTDemo/bo"
+	_ "github.com/nikhilbhide/JWTDemo/docs"
 	"github.com/nikhilbhide/JWTDemo/driver/postgres"
 	"github.com/nikhilbhide/JWTDemo/repository/users"
 	"github.com/nikhilbhide/JWTDemo/services/registry"
+	"github.com/nikhilbhide/JWTDemo/utility"
 	"log"
 	"net/http"
-	_ "github.com/nikhilbhide/JWTDemo/docs"
 )
 
 func main() {
@@ -27,5 +29,9 @@ func main() {
 	router.HandleFunc("/signupv3",registry.SignUpHandlerV3).Methods("POST")
 	router.HandleFunc("/signupv3",registry.SignUpHandlerV3).Methods("POST")
 	registry.NewLoginHandler(router,signUpUseCase)
-	log.Fatal(http.ListenAndServe("localhost:8080", router))
+
+	ip:=utility.GetIpAddress()
+	port:="8080"
+	fmt.Printf("Hosting service on IP address %s on port %s",ip,port)
+	log.Fatal(http.ListenAndServe( ip+":8081", router))
 }
