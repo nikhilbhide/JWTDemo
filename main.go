@@ -33,5 +33,5 @@ func main() {
 	ip:=utility.GetIpAddress()
 	port:="8080"
 	fmt.Printf("Hosting service on IP address %s on port %s",ip,port)
-	log.Fatal(http.ListenAndServe( ip+ ":" + port, router))
+	log.Fatal(http.ListenAndServe( ":8080", router))
 }
